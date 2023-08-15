@@ -86,6 +86,7 @@ const experience = [
   },
 ];
 
+
 let currentItem = 0;
 
 const img = document.getElementById("image");
