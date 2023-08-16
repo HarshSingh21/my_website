@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Code Editor Portfolio</title>
+</head>
+<body>
+   
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #000;
+    }
+    
+    .code-editor {
+        width: 70%;
+        background-color: #1e1e1e;
+        padding: 20px;
+        border: 2px solid #1e90ff; /* Blue border */
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+        display: flex;
+    }
+    
+    .line-numbers {
+        float: left;
+        text-align: right;
+        color: #777;
+        user-select: none;
+        padding: 10px;
+    }
+    
+    #code-container {
+        margin: 0;
+        padding: 0;
+        overflow-x: auto;
+    }
+    
+    #code {
+        color: #9cdcfe;
+        font-size: 16px;
+        white-space: pre;
+        margin: 0;
+        padding: 10px;
+    }
+    
+</style>
+
+<script>
+    const text = '\n'+
+        `#include <iostream>\n`
+        + `using namespace std;\n\n`
+        + `int main() {\n`
+        + `    cout << "Hello, I'm John Doe, a passionate web developer." << endl;\n`
+        + `    cout << "I love creating interactive and engaging websites." << endl;\n`
+        + `    cout << "My skills include HTML, CSS, JavaScript, and more." << endl;\n`
+        + `    cout << "Let's bring your ideas to life!" << endl;\n\n`
+        + `    return 0;\n}`;
+    
+    const codeElement = document.getElementById("code");
+    const lineNumbersElement = document.getElementById("line-numbers");
+    let index = 0;
+    
+    function updateLineNumbers() {
+        const lines = text.substr(0, index).split("\n").length;
+        lineNumbersElement.innerHTML = Array.from({ length: lines }, (_, i) => i + 1).join("<br>");
+    }
+    
+    function animateText() {
+        codeElement.textContent = text.slice(0, index);
+        updateLineNumbers();
+        index++;
+    
+        if (index <= text.length) {
+            setTimeout(animateText, 50);
+        }
+    }
+    
+    function resetAnimation() {
+        index = 0;
+        animateText();
+    }
+    
+    // Start the animation when the page loads
+    animateText();
+    
+    // Call resetAnimation to restart the animation (e.g., when a button is clicked)
+    // resetAnimation();
+    
+</script>
