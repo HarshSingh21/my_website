@@ -8,7 +8,7 @@ const exp = [
     title: "Frontent Intern",
     cardImage: "assets/images/experience-page/flipkart.jpg" ,
     place: "Inerion.Ai",
-    time: "(Aug, 2023 - present)",
+    time: "(Aug, 2023 - Present)",
     desp: "<li>Worked to migrate Authtication system  lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Ineurion to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
   },
   
@@ -17,7 +17,7 @@ const exp = [
     title: "Freelancing",
     cardImage: "assets/images/experience-page/gsoc.jpg",
     place: "Mindwell Councel",
-    time: "(Mar - Aug, 2019)",
+    time: "(Mar - Aug, 2023)",
     desp: "<li>Worked for Mindwell councel to design and interact their councelling system .</li><li>Worked on Extension Activity Monitor which is a privileged extension for payment system that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions and listen to the payment system</li>",
   },
   {
