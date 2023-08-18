@@ -1,15 +1,9 @@
-
 "use strict";
-// Sweet Alert CDN through JS
-let script = document.createElement("script");
-script.type = 'text/javascript';
-script.src="https://unpkg.com/sweetalert/dist/sweetalert.min.js";
-document.body.appendChild(script);
 
+/* Common Page Content */
 // Header
-
 let header = $(`
-<nav class="navbar navbar-expand-lg fixed-top dark-theme" id="navbar">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
 <a class="navbar-brand" href="index.html">John Doe </a>
 <div class="hamburger_wrapper navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -30,7 +24,7 @@ let header = $(`
    <li class="nav-item nav-item-hover"><a class="nav-link" href="education.html">Education</a></li>
    <li class="nav-item nav-item-hover"><a class="nav-link" href="https://hashnode.com/" target="_blank">Blogs</a></li>
    <li class="nav-item">
-   <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()" checked>
+   <input type="checkbox" id="dark_toggler" class="dark_toggler" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
    </li>
    <div class="bike">
    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 650 400" preserveAspectRatio="xMinYMin meet">
@@ -108,58 +102,15 @@ let header = $(`
 </div>
 </nav>`);
 
-// Footer
-
-
-
-//"Scroll to top" button
-let upArrow = $(`
-  <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
-  })
-`);
-
 $(document).ready(function () {
   // updating the color of the swiper bullets (initial update of color)
   updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
-
-  //function for the "Scroll To Top" button to detect the footer
-  $(window).scroll(function () {
-    //The button will be hidden until we scroll more than the window's height
-    if ($(window).scrollTop() < $(window).height()) {
-      $("#btnScrollToTop").css("visibility", "hidden");
-    } else {
-      $("#btnScrollToTop").css("visibility", "visible");
-      //The button will change it's color when it hits the footer
-      if (
-        $(window).scrollTop() + $(window).height() >
-        $(document).height() - 838
-      ) {
-        // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
-        $("#btnScrollToTop").css("background-color", "#6a00bb");
-      } else {
-        $("#btnScrollToTop").css("background-color", "#6a00bb");
-      }
-    }
-  });
 });
-
-//function to scroll to top
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
-};
 
 // Window Loads
 $(function () {
   let bodyElement = $(`body`);
   bodyElement.prepend(header);
-  bodyElement.append(footer);
-  bodyElement.append(upArrow);
-  $("#btnScrollToTop").css("visibility", "hidden");
 
   //toggler hamburger functions
   const menuBtn = document.querySelector(".navbar-toggler");
@@ -176,63 +127,30 @@ $(function () {
 });
 
 // function for toggling hamburger is-active class
-
 $(function () {
   $("#js-hamburger").on("click", function () {
     $(this).toggleClass("is-active");
   });
 });
 
-// Navbar current page highlight
-
-let loader = document.querySelector(".loader-container");
-
-window.addEventListener("load", vanish);
-
-function vanish() {
-  loader.classList.add("disappear");
-}
-$(function () {
-  $("a.nav-link").each(function () {
-    if ($(this).prop("href") == window.location.href) {
-      $(this).addClass("current-link");
-    }
-  });
-});
-
-//function to remove underline on hover
-
-$(document).ready(function () {
-  $("a.nav-link").hover(
-    function () {
-      $(this).removeClass("current-link");
-    },
-    function () {
-      if ($(this).prop("href") == window.location.href) {
-        $(this).addClass("current-link");
-      }
-    }
-  );
-});
-
-//consistent light mode for page change
-if (localStorage.getItem("lightMode") == "light") {
+//consistent dark mode for page change
+if (localStorage.getItem("lightMode") == "dark") {
   var app = document.getElementsByTagName("HTML")[0];
-  app.setAttribute("light-mode", "light");
+  app.setAttribute("light-mode", "dark");
 
   //to add dark theme to nav bar after its been loaded
   window.addEventListener("load", function () {
     var nav = document.getElementById("navbar");
-    nav.classList.remove("dark-theme");
-    document.getElementById("dark_toggler").checked = false;
+    nav.classList.add("dark-theme");
+    document.getElementById("dark_toggler").checked = true;
   });
 
   var sc = document.getElementsByClassName("socialicon");
   for (var i = 0; i < sc.length; i++) {
-    sc[i].classList.remove("dsc");
+    sc[i].classList.add("dsc");
   }
 } else {
-  localStorage.setItem("lightMode", "dark");
+  localStorage.setItem("lightMode", "light");
 }
 
 function toggle_light_mode() {
@@ -283,51 +201,60 @@ window.addEventListener("storage", function () {
 // Function to remove scroll bar during preload
 $(window).on("load", function () {
   setTimeout(function () {
-    $(".no-scroll-preload").css("overflow", "visible");
+    $(".no-scroll-preload").css("overflow", "hidden");
   }, 1000);
   $(".loader-container").fadeOut(2500);
 });
 
-//send button animation
+/* Semester Recap Page Content */
+// Store Semester Recap data
+const sem_temp = [
+  {
+    event_name: "Chemistry Lab",
+    event_type: "Mentorship",
+    event_image: "chemistrymentee.jpg",
+  },
+  {
+    event_name: "User Experience",
+    event_type: "Summer Research",
+    event_image: "uxresearch.jpg",
+  },
+  {
+    event_name: "UX Team",
+    event_type: "Happy Hours",
+    event_image: "teamcamping.jpg",
+  },
+  {
+    event_name: "Orientation",
+    event_type: "Keynote",
+    event_image: "groomingspeech.jpg",
+  },
+  {
+    event_name: "Graduation",
+    event_type: "Ceremony",
+    event_image: "graduation.jpg",
+  },
+];
 
+// Select content div
+const sem_temp_slides = document.querySelector(".sem_temp_slides");
 
-$(function submitAnimation() {
-  const name = document.querySelector("#name")
-  const emailAdress = document.querySelector("#email")
-  const text = document.querySelector("#textArea")
-  const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+// Function to add the memory pictures
+const fillData = () => {
+  let output = "";
+  sem_temp.forEach(
+    ({ event_name, event_type, event_image }) =>
+      (output += `
+            <div class="sem_temp_slide" style="background-image: url(assets/images/sem/sem1/${event_image});">
+                <div class="sem_temp_slideBg" style="background-image: url(assets/images/sem/sem1/${event_image});"></div>
+                <div class="sem_temp_slideContent">
+                    <span>${event_name}</span>
+                    <span>${event_type}</span>
+                </div>
+            </div>
+    `)
+  );
+  sem_temp_slides.innerHTML = output;
+};
 
-  $("#lnch").on("click", function () {
-
-    // Check if the name field is empty or contains a number
-    if (name.value == "" || (/\d/.test(name.value))) {
-      swal("Error !","Please enter a valid name !","error");
-      return;
-    }
-    // Check if the email field is empty or email is not valid ex: test@@email.com
-    else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
-      swal("Error !","Please enter a valid email !","error");
-      return;
-    }
-    // Check if the message field is empty
-    else if (text.value == "") {
-      swal("Error !","Please enter a valid message !","error");
-      return;
-    }
-    else {
-
-      setTimeout(function () {
-        $("#lnch").addClass("launching").text("Sending");
-        $("#lnch_btn").addClass("launching");
-      }, 0);
-      setTimeout(function () {
-        $("#lnch").addClass("launched").text("SENT");
-        $("#lnch_btn").addClass("launched");
-      }, 1500);
-      // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
-      setTimeout(() => {
-        document.querySelector('form').submit();
-      }, 2200);
-    }
-  });
-});
+fillData();
