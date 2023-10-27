@@ -5,7 +5,7 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Frontend ",
+    title: "Frontend Intern",
     cardImage: "assets/images/experience-page/flipkart.jpg" ,
     place: "Inerion.Ai",
     time: "(Aug, 2023 - Oct 2023)",
