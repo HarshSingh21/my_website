@@ -10,27 +10,27 @@ const projects = [
     cardImage: "assets/images/project-page/quiz.jpg",
     description: "A Tesla Clone made using react,reveal and redux",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "",
-    Githublink: "",
+    Previewlink: "https://tesla-clone-q12h.onrender.com/",
+    Githublink: "https://github.com/HarshSingh21/Tesla_Clone_",
   },
   {
     title: "Url Shortner",
     cardImage: "assets/images/project-page/chess.jpg",
     description: "Url Shortner made using springbot,dependencies",
     tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
-    Previewlink: "",
-    Githublink: "",
+    Previewlink: "https://github.com/HarshSingh21/Url_Shortner",
+    Githublink: "https://github.com/HarshSingh21/Url_Shortner",
   },
   {
-    title: "Flappy Bird",
+    title: "Pass Word Generator",
     cardImage: "assets/images/project-page/flappybird.png",
-    description: "Flappy bird game built using React.js",
+    description: "Password Generator made with javascript , which provide you to configure wide range of password.",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "",
-    Githublink: "",
+    Previewlink: "https://harshsingh21.github.io/Pass--Generator/",
+    Githublink: "https://github.com/HarshSingh21/Pass--Generator",
   },
   {
-    title: "Exercise Tracker",
+    title: "Tic-Tac-Toe",
     cardImage: "assets/images/project-page/exercise.jpg",
     description: "Exercise tracker built using basic redux.",
     tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
@@ -38,7 +38,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Recipe Ingredient Parser",
+    title: "QR code Generator",
     cardImage: "assets/images/project-page/recipe.jpg",
     description: "Recipe Ingredient Parser built using JavaScript.",
     tagimg:
@@ -47,7 +47,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Poker Game",
+    title: "Label Tac",
     cardImage: "assets/images/project-page/poker.jpg",
     description: "Poker game built using typescript.",
     tagimg: "https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png",
@@ -55,7 +55,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Tic Tac Toe Game",
+    title: "Dasboard-Design",
     cardImage: "assets/images/project-page/tic-tac-toe.png",
     description:
       "Tested a React Tic Tac Toe Game using Jest and React Testing Library.",
@@ -64,7 +64,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Personal Book Library",
+    title: "Text-To-Speech",
     cardImage: "assets/images/project-page/book.png",
     description: "Personal book library app built using JavaScript.",
     tagimg:
@@ -73,7 +73,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Minesweeper Game",
+    title: "Typing test",
     cardImage: "assets/images/project-page/minesweeper.jpg",
     description:
       "Minesweeper Game built using python Object Oriented Programming.",
@@ -83,7 +83,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Battery Life Calculator",
+    title: "E-commerce Grocery Platform",
     cardImage: "assets/images/project-page/battery.png",
     description: "Built battery life calculator using Python.",
     tagimg:
