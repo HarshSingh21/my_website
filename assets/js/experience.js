@@ -12,14 +12,13 @@ const exp = [
     desp: "<li>Worked to migrate Authtication system  lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Ineurion to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
   },
   {
-    title: "Research Intern",
+    title: "Summer Research Intern",
     cardImage: "assets/images/experience-page/IIT_BHU.jpg",
     place: "IIT, BHU",
     time: "(May 22 - July 22)",
     desp: "<li>Collaborated with Dr. Pratik Chattopadhyay, Assistant Professor at IIT BHU, to lead the development of a secure FTP server, optimizing data transfer and enhancing collaboration.</li><li>Integrated advanced video microscopy techniques for precise virus testing under guidance from Dr. Pratik Chattopadhyay and Dr. Prodyut Dhar which results in Improved testing accuracy by 31% and also established a streamlined pipeline for result analysis within the department’s FTP server infrastructure.</li>"
 
   },
-
 
   {
     
