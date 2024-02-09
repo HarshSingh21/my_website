@@ -5,20 +5,11 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Frontend Intern",
+    title: "Software Engineer Intern",
     cardImage: "assets/images/experience-page/flipkart.jpg" ,
-    place: "Inerion.Ai",
-    time: "(Aug, 2023 - Oct 2023)",
+    place: "Navodita Infotech Pvt.Ltd",
+    time: "(Oct, 2023 - Dec 2023)",
     desp: "<li>Worked to migrate Authtication system  lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Ineurion to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
-  },
-  
-  {
-    
-    title: "Freelancing",
-    cardImage: "assets/images/experience-page/gsoc.jpg",
-    place: "Mindwell Councel",
-    time: "(Mar - Aug, 2023)",
-    desp: "<li>Worked for Mindwell councel to design and interact their councelling system .</li><li>Worked on Extension Activity Monitor which is a privileged extension for payment system that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions and listen to the payment system</li>",
   },
   {
     title: "Research Intern",
@@ -27,6 +18,17 @@ const exp = [
     time: "(Dec 22 - Jan, 23)",
     desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
   },
+
+
+  {
+    
+    title: "Freelancing",
+    cardImage: "assets/images/experience-page/gsoc.jpg",
+    place: "Mindwell Councel , Csepathshala , Risingtechpro",
+    time: "(Mar- 2023, Current)",
+    desp: "<li>Worked for Mindwell councel to design and interact their councelling system .</li><li>Worked on Extension Activity Monitor which is a privileged extension for payment system that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions and listen to the payment system</li>",
+  },
+ 
 ];
 
 const showCards2 = () => {
