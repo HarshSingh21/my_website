@@ -6,6 +6,15 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
+    title: "Mitra(Web Chat Application)",
+    cardImage: "assets/images/project-page/quiz.jpg",
+    description: " Elevating Real-time Communication with Integrated Tools for User Ease",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "https://tesla-clone-q12h.onrender.com/",
+    Githublink: "https://github.com/HarshSingh21/Tesla_Clone_",
+  },
+
+  {
     title: "Tesla Clone",
     cardImage: "assets/images/project-page/quiz.jpg",
     description: "A Tesla Clone made using react,reveal and redux",

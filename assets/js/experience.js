@@ -79,7 +79,7 @@ const volunteershipcards = [
       "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
   },
   {
-    title: "PClub Summer Of Code 2022",
+    title: "PClub Summer Of Code 2023",
     cardImage: "assets/images/experience-page/3.jpg",
     description:
       "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
