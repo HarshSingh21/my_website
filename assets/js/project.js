@@ -10,8 +10,8 @@ const projects = [
     cardImage: "assets/images/project-page/quiz.jpg",
     description: " Elevating Real-time Communication with Integrated Tools for User Ease",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "https://tesla-clone-q12h.onrender.com/",
-    Githublink: "https://github.com/HarshSingh21/Tesla_Clone_",
+    Previewlink: "https://github.com/HarshSingh21/Mitra_fe",
+    Githublink: "https://github.com/HarshSingh21/Mitra_fe",
   },
 
   {
