@@ -15,8 +15,9 @@ const exp = [
     title: "Research Intern",
     cardImage: "assets/images/experience-page/IIT_BHU.jpg",
     place: "IIT, BHU",
-    time: "(Dec 22 - Jan, 23)",
-    desp: "<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
+    time: "(May 22 - July 22)",
+    desp: "<li>Collaborated with Dr. Pratik Chattopadhyay, Assistant Professor at IIT BHU, to lead the development of a secure FTP server, optimizing data transfer and enhancing collaboration.</li><li>Integrated advanced video microscopy techniques for precise virus testing under guidance from Dr. Pratik Chattopadhyay and Dr. Prodyut Dhar which results in Improved testing accuracy by 31% and also established a streamlined pipeline for result analysis within the department’s FTP server infrastructure.</li>"
+
   },
 
 
