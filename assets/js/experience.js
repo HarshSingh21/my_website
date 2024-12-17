@@ -17,11 +17,8 @@ const exp = [
     place: "IIT, BHU",
     time: "(May 22 - July 22)",
     desp: "<li>Collaborated with Dr. Pratik Chattopadhyay, Assistant Professor at IIT BHU, to lead the development of a secure FTP server, optimizing data transfer and enhancing collaboration.</li><li>Integrated advanced video microscopy techniques for precise virus testing under guidance from Dr. Pratik Chattopadhyay and Dr. Prodyut Dhar which results in Improved testing accuracy by 31% and also established a streamlined pipeline for result analysis within the department’s FTP server infrastructure.</li>"
-
   },
-
   {
-    
     title: "Freelancing",
     cardImage: "assets/images/experience-page/gsoc.jpg",
     place: "Mindwell Councel , Csepathshala , Risingtechpro",
@@ -62,6 +59,7 @@ const showCards2 = () => {
 document.addEventListener("DOMContentLoaded", showCards2);
 
 // Volunteership Cards
+
 
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
